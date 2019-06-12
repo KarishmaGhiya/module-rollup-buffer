@@ -23,3 +23,5 @@ The `lib-bee` depends on `buffer`
 
 - I am also trying to replicate the issue with service-bus for two copies of bffer in the rollup output
 - But I am not getting two copies of buffer in the rollup output
+
+For using `lib-sea` in-place of `buffer` refer this repository : https://github.com/KarishmaGhiya//module-duplication-rollup-rush
