@@ -1,6 +1,6 @@
 /// <reference lib="es2015" />
 /// <reference lib="esnext.asynciterable" />
-import {getBase64} from "lib-bee/index";
+import {getBase64} from "lib-bee";
 
 const buff = require('buffer/').Buffer;
 
