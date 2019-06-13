@@ -1,4 +1,4 @@
-import * as index from "./index";
+import * as index from "../index";
 var chai = require('chai');  
 var expect = chai.expect; 
 describe('evaluate',function(){
