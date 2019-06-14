@@ -38,6 +38,7 @@
       "typings/**"
     ],
     "include": [
-      "*.ts"
+      "*.ts",
+      "./test/**/*.ts"
     ]
   }
