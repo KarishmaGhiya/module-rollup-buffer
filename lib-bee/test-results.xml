@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.006" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-06-14T23:02:14" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="evaluate #RunnableInBrowser" timestamp="2019-06-14T23:02:14" tests="1" file="c:\code\trial_ramya\module-rollup-buffer\lib-bee\test-dist\index.js" failures="0" time="0.006">
+    <testcase name="evaluate #RunnableInBrowser base64" time="0.006" classname="base64">
+    </testcase>
+  </testsuite>
+</testsuites>

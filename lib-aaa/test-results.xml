@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.009000000000000001" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-06-14T23:11:56" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="evaluate #RunnableInBrowser" timestamp="2019-06-14T23:11:56" tests="2" file="c:\code\trial_ramya\module-rollup-buffer\lib-aaa\test-dist\index.js" failures="0" time="0.009000000000000001">
+    <testcase name="evaluate #RunnableInBrowser hex" time="0.005" classname="hex">
+    </testcase>
+    <testcase name="evaluate #RunnableInBrowser base64" time="0.004" classname="base64">
+    </testcase>
+  </testsuite>
+</testsuites>

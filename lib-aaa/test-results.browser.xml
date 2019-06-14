@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 76.0.3803 (Windows 10.0.0)" package="" timestamp="2019-06-14T23:12:12" id="0" hostname="MININT-NGRG5LP" tests="2" errors="0" failures="0" time="0.004">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36"/>
+  </properties>
+  <testcase name="evaluate #RunnableInBrowser hex" time="0.003" classname="evaluate #RunnableInBrowser"/>
+  <testcase name="evaluate #RunnableInBrowser base64" time="0.001" classname="evaluate #RunnableInBrowser"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 76.0.3803 (Windows 10.0.0) LOG: 'lib-aaa printing hex for buffer - 'hello world', 'ascii''
+,HeadlessChrome 76.0.3803 (Windows 10.0.0) LOG: '68656c6c6f20776f726c64'
+,HeadlessChrome 76.0.3803 (Windows 10.0.0) LOG: 'lib-bee printing base64 for buffer - 'hello world', 'ascii''
+,HeadlessChrome 76.0.3803 (Windows 10.0.0) LOG: 'aGVsbG8gd29ybGQ='
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

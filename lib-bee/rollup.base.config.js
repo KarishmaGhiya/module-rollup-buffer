@@ -56,9 +56,9 @@ export function browserConfig(test = false, production = false) {
     input: input,
     external: ["@azure/ms-rest-js"],
     output: {
-      file: "browser/lib-aaa.js",
+      file: "browser/lib-bee.js",
       format: "umd",
-      name: "ExampleClient",
+      name: "ExampleClientB",
       sourcemap: true,
       globals: { "@azure/ms-rest-js": "msRest" }
     },
@@ -78,7 +78,9 @@ export function browserConfig(test = false, production = false) {
         mainFields: ['module', 'browser'],
         preferBuiltins: false
       }),
-
+      cjs({
+        namedExports: { events: ["EventEmitter"] }
+      }),
 
       inject({
 
@@ -94,9 +96,6 @@ export function browserConfig(test = false, production = false) {
        
         }),
 
-      cjs({
-        namedExports: { events: ["EventEmitter"] }
-      }),
 
       viz({ filename: "browser/browser-stats.html", sourcemap: false })
     ]
@@ -107,7 +106,7 @@ export function browserConfig(test = false, production = false) {
     baseConfig.plugins.unshift(multiEntry({ exports: false }));
     baseConfig.output.file = "test-browser/index.js";
   } else if (production) {
-    baseConfig.output.file = "browser/lib-aaa.min.js";
+    baseConfig.output.file = "browser/lib-bee.min.js";
     baseConfig.plugins.push(terser());
   }
 

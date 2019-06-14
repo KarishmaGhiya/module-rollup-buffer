@@ -11,19 +11,6 @@ function getBase64(str) {
     // should print for 'hello world': aGVsbG8gd29ybGQ=
 }
 
-/// <reference lib="es2015" />
-function convertToBase64(str) {
-    return getBase64(str);
-}
-function convertToHex(str) {
-    const bufferConversionResult = Buffer.from(str, "ascii");
-    console.log("lib-aaa printing hex for buffer - '" + str + "', 'ascii'");
-    const res = bufferConversionResult.toString("hex");
-    console.log(res);
-    return res;
-    // should print for 'hello world': 68656c6c6f20776f726c64
-}
-
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function createCommonjsModule(fn, module) {
@@ -10865,11 +10852,8 @@ var chai$1 = chai;
 
 const should$1 = chai$1.should();
 describe('evaluate #RunnableInBrowser', function () {
-    it('hex', function () {
-        should$1.equal(convertToHex('hello world'), '68656c6c6f20776f726c64');
-    });
     it('base64', function () {
-        should$1.equal(convertToBase64('hello world'), 'aGVsbG8gd29ybGQ=');
+        should$1.equal(getBase64('hello world'), 'aGVsbG8gd29ybGQ=');
     });
 });
 //# sourceMappingURL=index.js.map
